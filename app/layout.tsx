@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/main.css";
 
 import { Montserrat, OpenSans } from "@/lib/font";
-
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -21,6 +21,7 @@ export default function RootLayout({
       <body
         className={`${Montserrat.variable} ${OpenSans.variable} font-opensans`}
       >
+        <Header />
         {children}
         <Footer />
       </body>
