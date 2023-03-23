@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         primary: "#1D3C94",
-        paragraph: "#808080",
+        paragraph: "#212121",
       },
     },
   },

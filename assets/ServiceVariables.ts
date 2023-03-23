@@ -1,3 +1,10 @@
+import webDevelopment from "../public/svg/web_development.svg";
+import softwareDevelopment from "../public/svg/software_development.svg";
+import cloudComputing from "../public/svg/cloud_computing.svg";
+import automationDevelopment from "../public/svg/automation_development.svg";
+import dataAnalytics from "../public/svg/data_analytics.svg";
+import eCommerce from "../public/svg/e-commerce.svg";
+
 export interface ServiceProps {
   title: string;
   description: string;
@@ -15,8 +22,8 @@ export const Services: ServiceProps[] = [
     description:
       "Build user-friendly and visually appealing websites and web applications that improve online presence and customer engagement.",
     image: {
-      src: "alt",
-      alt: "",
+      src: webDevelopment,
+      alt: "web development",
     },
   },
   {
@@ -24,8 +31,8 @@ export const Services: ServiceProps[] = [
     description:
       "Create reliable and scalable software solutions with user-friendly interfaces that enhance business processes, performance, and security.",
     image: {
-      src: "alt",
-      alt: "",
+      src: softwareDevelopment,
+      alt: "software development",
     },
   },
   {
@@ -33,8 +40,8 @@ export const Services: ServiceProps[] = [
     description:
       "Provide data-driven insights and solutions by analyzing large datasets to identify trends and patterns that enable organizations to make informed decisions and optimize performance.",
     image: {
-      src: "alt",
-      alt: "",
+      src: dataAnalytics,
+      alt: "data analytics",
     },
   },
   {
@@ -42,8 +49,8 @@ export const Services: ServiceProps[] = [
     description:
       "Host websites and applications in a secure and scalable environment with easy access to cloud resources, enabling efficient collaboration and data sharing.",
     image: {
-      src: "alt",
-      alt: "",
+      src: cloudComputing,
+      alt: "cloud computing",
     },
   },
   {
@@ -51,8 +58,8 @@ export const Services: ServiceProps[] = [
     description:
       "Build customized and optimized e-commerce solutions with seamless checkout experiences, secure payment gateways, and customer management systems to improve online sales and customer engagement.",
     image: {
-      src: "alt",
-      alt: "",
+      src: eCommerce,
+      alt: "e-commerce development",
     },
   },
   {
@@ -60,8 +67,8 @@ export const Services: ServiceProps[] = [
     description:
       "Automate repetitive and manual tasks with customized software solutions that enhance efficiency and accuracy, reduce costs and errors, and empower employees to focus on high-value tasks.",
     image: {
-      src: "alt",
-      alt: "",
+      src: automationDevelopment,
+      alt: "automation development",
     },
   },
 ];

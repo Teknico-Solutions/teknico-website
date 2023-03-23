@@ -18,7 +18,7 @@ const SectionHeading: React.FC<HeadingProps> = ({
       isMaxWidth && "max-w-[550px]"
     } ${
       isCenter ? "text-center items-center mx-auto" : "text-left items-start"
-    }`}
+    } lg:max-w-full`}
   >
     <h4 className="text-primary">{heading}</h4>
     <h2>{description}</h2>
