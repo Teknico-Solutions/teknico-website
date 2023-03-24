@@ -22,7 +22,7 @@
     @apply rounded-[15px] bg-[#F3F3F3] text-[14px] font-medium px-[30px] py-[15px] text-[#323232];
   }
   .burger-menu-span {
-    @apply bg-[#222] block w-full h-[4px] transition-all duration-200 ease-in-out;
+    @apply bg-[#000] block w-full h-[4px] transition-all duration-200 ease-in-out;
   }
 }
 

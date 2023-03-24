@@ -151,7 +151,10 @@ export default function Home() {
       </section>
 
       {/* contact form */}
-      <section className="bg-black/30 py-[50px] mt-[90px] relative">
+      <section
+        id="contact-us"
+        className="bg-black/30 py-[50px] mt-[90px] relative"
+      >
         <div className="absolute top-0 left-0 w-full h-full -z-10">
           <Image src={contactFormImage} alt="" fill className="object-cover" />
         </div>
