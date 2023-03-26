@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-interface IFormInput {
+export interface IFormInput {
   name: string;
   email: string;
   service: string;
@@ -18,7 +18,15 @@ const ContactForm: React.FC = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => (
+    console.log(data), await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+  );
 
   return (
     <form
@@ -69,7 +77,7 @@ const ContactForm: React.FC = () => {
       {/* <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} /> */}
       <div>
         <input
-          className="btn-primary-rounded"
+          className="cursor-pointer btn-primary-rounded"
           type="submit"
           value={"send email"}
         />

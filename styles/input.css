@@ -7,7 +7,7 @@
     @apply container mx-auto w-full mt-[90px] px-[15px];
   }
   .btn-primary {
-    @apply text-[#fff] bg-primary text-base font-semibold px-[32px] py-[16px] uppercase tracking-[1.75px];
+    @apply text-[#fff] bg-primary text-base lg:text-[18px] font-semibold px-[32px] py-[16px] lg:px-[36px] lg:py-[18px] uppercase tracking-[1.75px];
   }
   .btn-primary-rounded {
     @apply btn-primary rounded-[40px] shadow-[0px_15px_20px_rgba(0,0,0,0.2)];
@@ -16,10 +16,10 @@
     @apply flex flex-col gap-[10px] w-full;
   }
   .form-label {
-    @apply uppercase text-[12px] tracking-[1.5px] font-semibold text-paragraph;
+    @apply uppercase text-[12px] lg:text-[14px] tracking-[1.5px] font-semibold text-paragraph;
   }
   .form-input {
-    @apply rounded-[15px] bg-[#F3F3F3] text-[14px] font-medium px-[30px] py-[15px] text-[#323232];
+    @apply rounded-[15px] bg-[#F3F3F3] text-[14px] lg:text-[16px] font-medium px-[30px] py-[15px] text-[#323232];
   }
   .burger-menu-span {
     @apply bg-[#000] block w-full h-[4px] transition-all duration-200 ease-in-out;

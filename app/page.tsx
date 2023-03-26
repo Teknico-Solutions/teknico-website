@@ -21,7 +21,7 @@ export default function Home() {
             className="object-cover"
           />
         </div>
-        <div className="text-[#E9ECEF] px-[15px] container max-w-[50%] flex flex-col gap-[20px] justify-center items-center h-full text-center mx-auto">
+        <div className="text-[#E9ECEF] px-[15px] container md:max-w-[50%] flex flex-col gap-[20px] justify-center items-center h-full text-center mx-auto">
           <h1>Seamless IT Integration for Your Business Needs</h1>
           <p className="lg:text-[24px]">
             We provide customized IT solutions and services tailored to meet the
