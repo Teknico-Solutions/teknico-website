@@ -1,6 +1,6 @@
+// typescript error
+// @ts-ignore
 import nodemailer from "nodemailer";
-// import
-// import { type NextRequest } from 'next/server'
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -13,6 +13,8 @@ const transporter = nodemailer.createTransport({
 // nextjs 13 with typescript new api routes in app folder
 // sending email by using nodemailer with gmail
 export async function POST(request: Request) {
+  console.log(process.env.EMAIL_ADDRESS);
+  console.log(process.env.EMAIL_PASSWORD);
   console.log(request.body);
   const res = await request.json();
   console.log(res)
@@ -48,7 +50,13 @@ export async function POST(request: Request) {
     `,
 
   };
+
+  console.log(mail);
+
+  // ignore typescript error
+  // @ts-ignore
   transporter.sendMail(mail, (err, data) => {
+    console.log(err, data);
     if (err) {
       return {
         status: "fail",

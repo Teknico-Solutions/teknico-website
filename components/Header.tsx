@@ -63,9 +63,9 @@ const Header: React.FC = () => {
         <div
           className={`${
             isBurgerActive ? "translate-x-0" : "translate-x-full"
-          } fixed w-full h-screen top-0 left-0 bg-black/80 text-[#fff] transition-all duration-500 ease-in-out lg:bg-transparent lg:text-[#000] lg:translate-x-0 lg:static`}
+          } fixed w-full h-screen top-0 left-0 bg-black/80 text-[#fff] transition-all duration-500 ease-in-out lg:bg-transparent lg:text-[#000] lg:translate-x-0 lg:static lg:h-full`}
         >
-          <ul className="pt-[60px] h-full flex flex-col gap-6 text-2xl font-semibold items-center text-center lg:flex-row lg:pt-0 lg:h-full lg:justify-end lg:text-base">
+          <ul className="pt-[60px] h-full flex flex-col gap-6 text-2xl font-semibold items-center text-center lg:flex-row lg:pt-0 lg:justify-end lg:text-base">
             <li>
               <Link href={"/"}>Home</Link>
             </li>

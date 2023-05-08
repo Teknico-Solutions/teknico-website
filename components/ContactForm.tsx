@@ -18,8 +18,9 @@ const ContactForm: React.FC = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
+
   const onSubmit: SubmitHandler<IFormInput> = async (data) => (
-    console.log(data), await fetch("/api/email", {
+    await fetch("/api/email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
